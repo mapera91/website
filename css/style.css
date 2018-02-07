@@ -225,7 +225,7 @@ header nav ul a {
     background-image: url('../img/matrix-2354492_1280 (1).jpg');
     background-position: center;
     background-size: contain;
-    background-attachment: fixed;
+    background-attachment: scroll;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -420,6 +420,12 @@ footer p {
 
 /*Media Queries*/
 
+@media (min-width:1280px){
+    .hero {
+        background-attachment: fixed;
+    }
+}
+
 @media (max-width:720px) {
     .fila {
         display: flex;
@@ -445,9 +451,6 @@ footer p {
     }
     nav {
         display: none
-    }
-    .hero {
-        background-attachment: scroll;
     }
     .hero h1 {
         font-size: 36px;
