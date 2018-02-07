@@ -1,0 +1,508 @@
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #3f3f3f;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+a:hover {
+    color: crimson;   /*Colores corporativos*/
+}
+
+a.activo {
+    color: crimson;
+    font-weight: bolder;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.5em;
+    padding: 20px;
+}
+
+.boton {
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: crimson;
+}
+
+.naranja {
+    background-color: #EA5C1C;
+    border: solid 2px #3f3f3f;
+}
+
+.azul {
+    background-color: #2DABE3;
+    border: solid 2px #3f3f3f;
+}
+
+.amarillo {
+    background-color: #F3C100;
+    border: solid 2px #3f3f3f;
+}
+
+.naranja:hover {
+    color: white;
+    background-color: #DF4215;
+}
+
+.azul:hover {
+    color: white;
+    background-color: #0D71B9;
+}
+
+.amarillo:hover {
+    color: white;
+    background-color: #E8A50A;
+}
+
+@keyframes intermitente {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fila {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primera {
+    margin-top: 100px;
+}
+
+.fondo {
+    margin: 0;
+    background-image: url('../img/hand-3044387_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.col1 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.col2 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 2;
+}
+.col3 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie {
+    display: flex;
+    align-items: flex-end;
+}
+
+.eslogan {
+    font-size: 50px;
+    margin: 60px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.separador {
+    border: solid 2px #3f3f3f;
+    display: none;
+}
+
+/*Cabecera-barra de navegación*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 4px #445;
+}
+
+header.blanco {
+    box-shadow: initial;
+}
+
+.burger {
+    color: #3f3f3f;
+    font-size: 34px;
+    display: none;
+}
+
+.blanco .burger {
+    color: white;
+}
+
+.logo {
+    font-size: 50px;
+    color: #3f3f3f;
+}
+
+.blanco .logo {
+    color: white;
+}
+
+.blanco .logo:hover {
+    color: crimson;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 15px;
+}
+
+header nav ul a {
+    color: #3f3f3f;
+}
+
+.blanco nav ul a {
+    color: white;
+}
+
+.blanco nav ul a:hover {
+    color: crimson;
+}
+
+.blanco nav ul a.activo {
+    color: crimson;
+    font-weight: bolder;
+}
+
+/*Hero*/
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/matrix-2354492_1280 (1).jpg');
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 50px;
+    line-height: initial;
+}
+
+.hero h2 {
+    color: white;
+    margin-bottom: 60px;
+    line-height: initial;
+}
+
+.hero a {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 60px;
+    animation-name: intermitente;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+
+/*Formulario Newsletter*/
+
+.miniform {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniform p {
+    color: crimson;
+    font-size: 28px;
+}
+
+.miniform input {
+    border: solid 2px #3f3f3f;
+    color: crimson;
+    font-size: 24px;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.miniform .boton {
+    background-color: crimson;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+    background-color:#556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.top {
+    height: 50px;
+    width: 50px;
+    background-color: #556;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);   /*Translada la mitad del ancho del elemento*/
+    font-size: 36px;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.izdo {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.centro {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro a {
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.centro a:hover {
+    color: crimson;
+}
+
+
+
+.dcho {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dcho a {
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.dcho a:hover {
+    color: crimson;
+}
+
+.copy {
+    width: 100%;
+    padding: 5px;
+}
+
+.copy p {
+    text-align: center;
+}
+
+.copy a {
+    font-size: 18px;
+    color: white;
+}
+
+.copy a:hover {
+    color: crimson;
+}
+
+/*Estilos para contacto*/
+
+.direccion {
+    line-height: 2em;
+}
+
+.legal h1 {
+    font-size: 26px;
+}
+
+.legal h2 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.legal p, li {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.legal ul {
+    padding-left: 40px;
+    line-height: 1em; 
+}
+
+/*Media Queries*/
+
+@media (max-width:720px) {
+    .fila {
+        display: flex;
+        flex-direction: column;
+    }
+    .col1,.col2,col3 {
+        flex-basis: initial;
+    } 
+    .columna {
+        margin: 20px;
+    }
+    .separador {
+        display: initial;
+    }
+    .izdo,.centro,.dcho {
+        flex-basis: 200px;
+    }
+} 
+
+@media (max-width:640px) {
+    .burger {
+        display: initial;
+    }
+    nav {
+        display: none
+    }
+    .hero h1 {
+        font-size: 36px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .hero h2 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .fondo {
+        padding: 0 20px 0 20px;
+    }
+    .eslogan {
+        font-size: 30px;
+        margin: 0px;
+    }
+    .miniform {
+        text-align: center;
+    }
+    .miniform {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .izdo,.centro,.dcho {
+        flex-basis: 200px;
+    }
+}
+
+@media (max-width:420px) {
+    .fila {
+        margin: 20px 0px 20px 0px;
+    }
+    .fila.primera {
+        margin: 100px 0px 20px 0px;
+    }    
+    .miniform input {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .miniform .boton {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .ultima {
+        margin: 20px 0 40px 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .izdo {
+        text-align: center
+    }
+}
+
